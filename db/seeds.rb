@@ -1,3 +1,7 @@
+Quote.destroy_all
+User.destroy_all
+Round.destroy_all
+# Q U O T E S 
 michael_scott_quotes = ["Wikipedia is the best thing ever. Anyone in the world can write anything they want about any subject. So you know you are getting the best possible information.",
 "Guess what, I have flaws. What are they? Oh I don't know. I sing in the shower. Sometimes I spend too much time volunteering. Occasionally I'll hit somebody with my car. So sue me.",
 "Sometimes I'll start a sentence and I don't even know where it's going. I just hope I find it along the way.",
@@ -119,3 +123,15 @@ michael_scott_quotes = ["Wikipedia is the best thing ever. Anyone in the world c
 michael_scott_quotes.each do |quote|
     Quote.create(quote: quote)
 end
+
+# U S E R S 
+
+user1 = User.create!(username: "Nick")
+user2 = User.create!(username: "Johnson")
+user3 = User.create!(username: "Jim")
+
+
+# R O U N D S 
+round1 = Round.create!(user_id: User.all.sample.id, quote_id: Quote.all.sample.id, score: 0, completion_time: 30)
+round2 = Round.create!(user_id: User.all.sample.id, quote_id: Quote.all.sample.id, score: 0, completion_time: 20)
+round3 = Round.create!(user_id: User.all.sample.id, quote_id: Quote.all.sample.id, score: 0, completion_time: 40)

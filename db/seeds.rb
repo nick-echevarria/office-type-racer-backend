@@ -115,8 +115,7 @@ michael_scott_quotes = ["Wikipedia is the best thing ever. Anyone in the world c
 "I hate looking at your face. I wanna smash it.",
 "Only thing that could make this day better is ice cream."]
 
-def quote_creator(array)
-    michael_scott_array.each do |quote|
-        quote.create(quote: quote)
-    end
+
+michael_scott_quotes.each do |quote|
+    Quote.create(quote: quote)
 end

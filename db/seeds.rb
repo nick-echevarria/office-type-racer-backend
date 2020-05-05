@@ -1,6 +1,7 @@
 Quote.destroy_all
 User.destroy_all
 Round.destroy_all
+
 # Q U O T E S 
 michael_scott_quotes = ["Wikipedia is the best thing ever. Anyone in the world can write anything they want about any subject. So you know you are getting the best possible information.",
 "Guess what, I have flaws. What are they? Oh I don't know. I sing in the shower. Sometimes I spend too much time volunteering. Occasionally I'll hit somebody with my car. So sue me.",
